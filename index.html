@@ -1,1 +1,104 @@
-Hello World
+<!-- This is how you set up the start of your html document -->
+<!-- Header Section -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>SANDZ</title>
+		<link rel="stylesheet" href="styles.css"> 
+	</head>
+
+    
+    <body>
+		<header id="header">
+			<img src="images/SANDZ LOGO_WHITE_850x400.png" alt="sandz-logo"/>
+			<nav>
+                <a href="" class="nav-link">Portfolio</a>
+                <a href="" class="nav-link">About</a>
+                <a href="" class="nav-link">Contact</a>
+			</nav>
+		</header>
+
+		<main>
+			<!-- Hero -->
+			<section class="hero">
+				<img src="images/sandz graphics-01.png" alt="illustrated headshot with flowers" id="hero-image"/>
+				<div class="hero-block">
+                    <div class="hero-text">
+                        <h1>Hi, I'm Sandra!</h1>
+                        <p>I'm a Graphic Designer, Illustrator and Junior Front End Developer from Perth, WA.</p> 
+                    </div>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/sandzlopez/" id="icons">
+                            <img alt="linkedin-icon" src="images/icons8-linkedin-144.png">
+                        </a>
+                        <a href="https://github.com/Sandz-Studio" id="icons">
+                            <img alt="github-icon" src="images/icons8-github-144.png">
+                        </a>
+                        <a href="https://www.behance.net/sandzstudio" id="icons">
+                            <img alt="behance-icon" src="images/icons8-behance-144.png">
+                        </a>
+                        <a href="https://www.instagram.com/sandz.studio/" id="icons">
+                            <img alt="instagram-icon" src="images/icons8-instagram-144.png">
+                        </a>
+                    </div>
+                </div>
+			</section>
+
+			<section class="project">
+				<h2>My Work</h2>
+                <div class="articles">
+                    <article>
+                        <!-- placer holder image -->
+                        <img src="images/flower graphics-03.jpg" aria-label="lavender illustration" class="project-image"/>
+                        <h3>HTML/CSS</h3>
+                    </article>
+                    <article>
+                        <!-- placer holder image -->
+                        <img src="images/flower graphics-02.jpg" aria-label="orchid illustration" class="project-image"/>
+                        <h3>PYTHON</h3>
+                    </article>
+                </div>
+                <a href="" class="project-button">See My Portfolio</a>
+			</section>
+
+
+            <section class="contact">
+                <h2>Get in touch!</h2>
+                <p>
+                  If have questions regarding my work or if you would like to collaborate on a project, I would love to hear from you!
+                </p>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xwkdabnk" method="post">
+                        <div class="contact-field">
+                            <label for="name" class="contact-label">Name</label>
+                            <input type="text" id="name" name="name" />
+                        </div>
+                        <div class="contact-field">
+                            <label for="mail" class="contact-label">Email</label>
+                            <input type="email" id="mail" name="email" />
+                        </div> 
+                        <div class="contact-field">
+                        <label for="message" class="contact-label">Message</label>
+                        <textarea id="message" name="message">
+                            Hi Sandra!
+                        </textarea>
+                        </div>  
+                        <button class="contact-send" type="submit">Send</button>
+                    </form>
+                </div>
+                
+            </section>
+		</main>
+
+
+		<Footer class="footer">
+            <img src="images/SANDZ MONOGRAM_WHITE.png" alt="Sandz Studio Monogram" id="monogram"/>
+            <p>© SANDZ STUDIO 2023</p>
+		</Footer>
+	</body>
+</html>
