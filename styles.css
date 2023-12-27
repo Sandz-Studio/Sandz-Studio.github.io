@@ -113,9 +113,13 @@ p:not(:last-child){
 
 
 /* Header Styles Section */ 
+#header-logo {
+    padding: 0px 0px 5px 0px;
+}
+
 header {
     height: 140px;
-    padding: 20px;
+    padding: 10px 0px 10px 0px;
     background-color: var(--color1);
     display: flex;
     flex-wrap: wrap;
@@ -127,20 +131,21 @@ header img {
 }
 
 nav {
-    margin: 10px;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
     justify-content: space-between;
 }
 
 .nav-link {
     color:var(--color7);
     text-decoration: none; 
-    padding: 20px;
+    padding: 10px 20px;
     font-weight: 100;
 }
 
 .nav-link:hover {
-    color: var(--color4);
-    text-decoration: underline;
+    border: 2px solid #ffa358;
+    border-radius: 3px;
 }
 /* End of Header Styles */ 
 
@@ -148,18 +153,18 @@ nav {
 
 
 /* Hero Section Styles */
-#hero-image {
-    height: auto;
-    width: 200px;
-    padding-bottom: 20px;
-    
-}
-
 .hero{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+#hero-image {
+    height: auto;
+    width: 300px;
+    padding-bottom: 30px;
+    
 }
 
 .hero-text {
@@ -173,20 +178,24 @@ nav {
 
 }
 
-#icons {
-    width: 40px;
+.icons-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 20px 0px 20px -4px;
 }
 
 .icons {
-    display: inline-flex;
-    gap: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 45px;
+    height: 45px;
 }
 
-#icons:hover {
+.icons:hover {
     border: 2px solid #ffa358;
     border-radius: 3px;
+    margin: 0px 0px 0px 4px;
+    padding: 2px;
 }
 /* End Hero Section Styles */
 
@@ -208,6 +217,11 @@ nav {
     padding-bottom: 10px;
 }
 
+.project-link:hover h3 {
+    border: 2px solid #ffa358;
+    border-radius: 3px;
+}
+
 .cv-button {
     padding: 10px 15px;
     display: inline-block;
@@ -226,6 +240,7 @@ nav {
 .cv-button:hover {
     color: var(--color5);
     border-color: var(--color5);
+    
 }
 /* END Project Section Styles */
 
@@ -254,7 +269,6 @@ nav {
 
 .contact-send {
     padding: 10px 15px;
-    display: inline-block;
     float: right;
     background-color: var(--color1);
     color: var(--color7);
@@ -335,47 +349,61 @@ ul li::before {
 
 
 /* Media Query */
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+
+    #header-logo {
+        margin: 10px;
+        padding: 0px 0px 0px 10px;
+    }
+    
     #header {
         height: 50px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        
     }
+
     main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 40px;
     }
 
     .hero {
         display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        width: 
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
     #hero-image {
         height: auto;
-        width: 600px;
-        padding-left: 60px;
-        
+        width: 450px;
+        padding-bottom: 5px;
+
     }
 
     .hero-block {
         display: flex;
         flex-direction: column;
-        padding-left: 80px;
+        /* padding-left: 80px; */
     }
 
     h1 {
         padding-top: 40px;
     }
 
-    .icons {
+    /* .icons {
         margin-bottom: 60px;
-    }
+    } */
 
     .project {
         display: flex;
