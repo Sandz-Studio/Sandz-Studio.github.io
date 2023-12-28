@@ -40,20 +40,20 @@ html, body{
     color:var(--text);
 }
 
+header {
+    height: 150px;
+    padding: .5rem 1rem 1rem 1rem;
+}
+
 body {
     background-color: var(--color1);
     min-height: 100vh;
 }
 main {  
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-}
-
-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 2rem;
 }
 
 :root {
@@ -64,6 +64,8 @@ section {
     --color5: #F48795;
     --color6: #FCE3CD;
     --color7: #ffffff;
+    --color8: #6b0073;
+    --color8: #fbdb29;
   /*  inherited colors  */
     --text: var(--color7);
   }
@@ -78,15 +80,16 @@ h1 {
 h2 {
     font-family: "Limelight", sans-serif;
     font-size: 28px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     color: var(--color4);
 }
 h3 {
     font-family: "Figtree", sans-serif;
     font-size: 18px;
+    padding-top: .5rem;
     padding-bottom: .5rem;
-    font: 900;
+    font-weight: 500;
     color: #ffffff;
 }
 h4 {
@@ -109,37 +112,36 @@ p:not(:last-child){
 /* End of GLOBAL STYLES */
 
 
-
-
-
 /* Header Styles Section */ 
-#header-logo {
-    padding: 0px 0px 5px 0px;
-}
-
-header {
-    height: 140px;
-    padding: 10px 0px 10px 0px;
+#header {
     background-color: var(--color1);
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, var(--color4), var(--color2), var(--color5), var(--color3)) bottom;
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
+    height: auto;
+    gap: .5rem;
+    padding: 1rem;
 }
 
 header img {
-    height: 70px;
+    height: 60px;
 }
 
 nav {
-    margin: 10px 0px 0px 0px;
-    padding: 10px 0px 10px 0px;
+    padding: .5rem 0px .5rem 0px;
+    gap: 40px;
     justify-content: space-between;
 }
 
 .nav-link {
     color:var(--color7);
-    text-decoration: none; 
-    padding: 10px 20px;
+    text-decoration: none;
+    padding: 10px 15px;
     font-weight: 100;
 }
 
@@ -152,23 +154,25 @@ nav {
 
 
 
-/* Hero Section Styles */
+/* HERO */
 .hero{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 #hero-image {
     height: auto;
-    width: 300px;
-    padding-bottom: 30px;
+    width: 100%;
+    padding-bottom: 1rem;
     
 }
 
 .hero-text {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     text-wrap: wrap;
 }
 
@@ -183,43 +187,66 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 25px;
-    margin: 20px 0px 20px -4px;
+    margin: 20px 0px 20px 0px;
 }
 
 .icons {
-    width: 45px;
-    height: 45px;
+    width: 25px;
+    height: 25px;
 }
 
 .icons:hover {
     border: 2px solid #ffa358;
     border-radius: 3px;
-    margin: 0px 0px 0px 4px;
-    padding: 2px;
+    padding: 4px 4px;
 }
-/* End Hero Section Styles */
 
 
+/* MY WORK SECTION */
+.project {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, var(--color4), var(--color2), var(--color5), var(--color3)) top;
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
+    padding-bottom: 2rem;
+}
 
-
-
-/* Project Section Styles */
 .articles {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2rem;
     justify-content: space-between;
 }
 
 .project-image {
-    width: 300px;
+    width: 100%;
+    height: auto;
     border-radius: 4px;
-    padding-bottom: 10px;
+}
+
+.project-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-link h3 {
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 .project-link:hover h3 {
     border: 2px solid #ffa358;
     border-radius: 3px;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+#cv {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: 2rem 0rem 1rem 0rem;
 }
 
 .cv-button {
@@ -227,33 +254,42 @@ nav {
     display: inline-block;
     background-color: var(--color1);
     color: var(--color7);
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 1.1rem;
     border: 2px solid var(--color7);
     border-radius: 3px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    margin-top:40px;    
 }
 
 .cv-button:hover {
     color: var(--color5);
     border-color: var(--color5);
-    
 }
-/* END Project Section Styles */
 
 
 
+/* ABOUT ME SECTION */
+.about-me {
+    background: linear-gradient(to right, var(--color4), var(--color2), var(--color5), var(--color3)) top;
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
+    padding-bottom: 4rem;
+}
 
 
-/* Contact form Styles */
+/* GET IN TOUCH */
+.contact {
+    background: linear-gradient(to right, var(--color4), var(--color2), var(--color5), var(--color3)) top;
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
+    padding-bottom: 2rem;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
 .contact-field {
@@ -265,6 +301,10 @@ nav {
 .contact-label {
     font-weight: 600;
     padding-bottom: 5px;
+}
+
+textarea::placeholder {
+    text-align: left;
 }
 
 .contact-send {
@@ -287,30 +327,32 @@ nav {
     border-color: var(--color5);
 }
 
-/* END Contact form Styles */
 
-
-
-
-
-/* Footer Styles */
+/* FOOTER */
 .footer {
+    background: linear-gradient(to right, var(--color4), var(--color2), var(--color5), var(--color3)) top;
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding-bottom: 40px;
+    gap: 15px;
+    padding: 2rem 0rem 1.5rem 0rem;
     background-color: var(--color1);
+}
+
+.footer p {
+    font-size: .6rem;
 }
 
 #monogram {
     height: auto;
-    width: 60px;
+    width: 40px;
 }
 /* Footer Styles */
 
 
-/* Page 2 HTML/CSS Project 1 Styles*/
+/* NOT CHECKED YET PAGE 2 HTML/CSS Project 1 Styles*/
 .project-image {
     padding-top: 10px;
 }
@@ -345,36 +387,39 @@ ul li::before {
     width: 1em;
     margin-left: -1em; 
 }
-/* End of Project 1 Styles Page*/
 
 
 /* Media Query */
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {} */
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
-    #header-logo {
-        margin: 10px;
-        padding: 0px 0px 0px 10px;
-    }
     
+    /* HEADER */
     #header {
-        height: 50px;
-        padding-left: 20px;
-        padding-right: 20px;
+        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
+        padding: 1.2rem;
     }
 
+    header img {
+        width: 120px;
+        height: auto;
+        padding-left: .8rem;
+    }
+
+    /* MAIN */
     main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 40px;
-        padding-left: 60px;
-        padding-right: 60px;
-        padding-bottom: 40px;
+        gap: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 
     .hero {
@@ -386,31 +431,24 @@ ul li::before {
 
     #hero-image {
         height: auto;
-        width: 450px;
-        padding-bottom: 5px;
-
+        width: 80%;
     }
 
     .hero-block {
         display: flex;
         flex-direction: column;
-        /* padding-left: 80px; */
+        align-items: center;
     }
 
-    h1 {
-        padding-top: 40px;
+    .hero-text {
+        text-align: center;
     }
 
-    /* .icons {
-        margin-bottom: 60px;
-    } */
-
+    /* MY WORK SECTION */
     .project {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 50px;
-        gap: 30px;   
     }
 
     .project-image {
@@ -420,19 +458,39 @@ ul li::before {
     .articles {
         display: flex;
         flex-direction: row;
-        gap: 40px;
+        flex-wrap: wrap;
+        align-items: center;
+        gap:1rem
+    }
+
+    .project-link {
+        flex-grow: 1;
+        flex-basis: 200;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-link h3 {
+        text-align: center;
+        width: 200px;
+        font-size: 1rem;
+    }
+
+    #cv {
+        margin: 3rem 0rem 1rem 0rem;
     }
 
     .cv-button {
-        margin-top: 20px;
+        padding: 10px 30px;
     }
 
+    /* ABOUT ME */
     .about-me {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-wrap: wrap;
-        width: 910px;
     }
 
     .contact {
@@ -441,12 +499,12 @@ ul li::before {
         align-items: center;
     }
 
-    .contact-field {
-        width: 910px;
+    .contact-form {
+        width: 100%;
     }
 
     .footer {
-        font-size: 14px;
+        font-size: .8rem;
     }
 
     #monogram {
@@ -454,7 +512,7 @@ ul li::before {
         width: 40px;
     }
 
-    /*Project 1 Page Styles*/
+    /* NOT CHECK YET Project 1 Page Styles*/
     .block {
         display: flex;
         flex-direction: column;
@@ -479,18 +537,83 @@ ul li::before {
         margin-top: 50px;
         margin-left: 40px;
     }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    main {
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    main {
+        padding-top: 4rem;
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
+        padding-bottom: 4rem;
     }
 
-    /*Project 1 Page Styles*/
-
-    @media only screen and (max-width: 600px) {
-
-        section {
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
+    .hero {
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        align-items: end;
+        gap: 2rem;
     }
 
+    #hero-image {
+        height: auto;
+        width: 50%;
+    }
 
+    .hero-block {
+        display: inline-block;
+        align-items: left;
+        width: 45%;
+        padding-bottom: 2rem;
+    }
+
+    .hero-text {
+        text-align: left;
+        text-wrap: wrap;
+    }
+
+    .project-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-image {
+        width: 300px;
+    }
+
+    .project-link h3 {
+        text-align: center;
+        width: 300px;
+        font-size: 1rem;
+    }
+
+    .articles {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap:1rem
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .articles {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        /* gap:3rem */
+    }
+}
  

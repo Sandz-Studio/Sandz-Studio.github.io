@@ -13,7 +13,7 @@
 	</head>  
     <body>
 		<header id="header">
-			<img src="images/SANDZ LOGO_WHITE_850x400.png" alt="Sandz Studio logo" id="header-logo"/>
+			<img src="images/SANDZ LOGO_WHITE_850x400.png" alt="Sandz Studio logo"/>
 			<nav>
                 <a href="#about-me" class="nav-link">About</a>
                 <a href="#my-work" class="nav-link">Portfolio</a>
@@ -22,7 +22,7 @@
 		</header>  
 
 		<main>
-			<!-- Hero -->
+			<!-- HERO -->
 			<section class="hero">
 				<img src="images/sandz graphics-01.png" alt="illustrated headshot with flowers" id="hero-image"/>
 				<div class="hero-block">
@@ -48,8 +48,8 @@
                 </div>
 			</section>
 
-            <!-- My Work Section -->
-			<section class="project" id="my-work">
+            <!-- MY WORK SECTION -->
+			<section class="project" >
 				<h2>My Work</h2>
                 <div class="articles">
                     <!-- HTML/CSS -->
@@ -57,38 +57,45 @@
                         <a href="https://sandz-studio.github.io/project_one.html" target="_blank">
                             <img src="images/CSS.png" alt="HTML/CSS symbol" class="project-image"/>
                         </a>
-                        <h3>HTML/CSS</h3>
+                        <h3><a href="https://sandz-studio.github.io/project_one.html"></a>HTML/CSS</h3>
                     </article>
                     <!-- Python -->
                     <article class="project-link">
                         <a href="https://github.com/Sandz-Studio/plus_weather" target="_blank">
                             <img src="images/icons8-python-250.png" alt="PYTHON Logo" class="project-image"/>
                         </a>
-                        <h3>PYTHON</h3>
+                        <h3><a href="https://github.com/Sandz-Studio/plus_weather"></a>PYTHON</h3>
                     </article>
                     <!-- Django -->
                     <article class="project-link">
                         <a href="https://github.com/Sandz-Studio/she_codes_news" target="_blank">
                             <img src="images/icons8-django-250.png" alt="DJANGO Logo" class="project-image"/>
                         </a>
-                        <h3>DJANGO</h3>
+                        <h3><a href="https://github.com/Sandz-Studio/she_codes_news"></a>DJANGO</h3>
                     </article>
                     <!-- Javascript -->
+                    <!-- Link to Project Later -->
                     <article class="project-link">
                         <img src="images/icons8-javascript-250.png" alt="Javascript Logo" class="project-image"/>
-                        <h3>JAVASCRIPT/REACT</h3>
+                        <h3><a href=""></a>JAVASCRIPT</h3>
                     </article>
                 </div>
-                <!-- DOWNLOAD CV -->
-                <a href="images/CV - Sandra Lopez Guardado.pdf" download="CV - Sandra Lopez Guardado" target="_blank" class="cv-button">Download My CV</a>
-			</section>
 
-            <!-- About Me Section -->
-            <section class="about-me" id="about-me">
+                <!-- DOWNLOAD CV -->
+                <div id="cv">
+                <a href="images/CV - Sandra Lopez Guardado.pdf" download="CV - Sandra Lopez Guardado" target="_blank" class="cv-button">Download My CV</a>
+                </div>
+
+            </section>
+
+            <!-- ABOUT ME SECTION -->
+            <section class="about-me">
                 <h2>About Me</h2>
                 <p>During my graphic design studies, I got a taste of HTML and CSS when we learnt about website building on WordPress. I attended a She Codes One-day workshop and I loved it! I was proud of myself for trying something I previously have the confidence to do. I want to bring my love of graphic design, interest in UX/UI and coding together to achieve cool things in the tech space.</p>
             </section>
-            <section class="contact" id="contact">
+
+            <!-- GET IN TOUCH -->
+            <section class="contact">
                 <h2>Get in touch!</h2>
                 <p>
                   If have questions regarding my work or if you would like to collaborate on a project, I would love to hear from you!
@@ -105,9 +112,7 @@
                         </div> 
                         <div class="contact-field">
                         <label for="message" class="contact-label">Message</label>
-                        <textarea id="message" name="message">
-                            Hi Sandra!
-                        </textarea>
+                        <textarea id="message" name="message" placeholder="Hi Sandra!"></textarea>
                         </div>  
                         <button class="contact-send" type="submit">Send</button>
                     </form>
@@ -115,7 +120,8 @@
                 
             </section>
 		</main>
-        <!-- Footer Section -->
+
+        <!-- FOOTER -->
 		<Footer class="footer">
             <img src="images/SANDZ MONOGRAM_WHITE.png" alt="Sandz Studio Monogram" id="monogram"/>
             <p>© SANDZ STUDIO 2023</p>
