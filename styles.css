@@ -74,14 +74,15 @@ main {
 h1 {
     font-family: "Limelight", sans-serif;
     font-size: 36px;
-    color: var(--color5);
+    padding-bottom: .5rem;
+    color: var(--color4);
 
 }
 h2 {
     font-family: "Limelight", sans-serif;
     font-size: 28px;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     color: var(--color4);
 }
 h3 {
@@ -416,7 +417,7 @@ ul li::before {
     }
 
     header img {
-        width: 120px;
+        width: 150px;
         height: auto;
         padding-left: .8rem;
     }
@@ -426,7 +427,7 @@ ul li::before {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 3rem;
         padding-left: 3rem;
         padding-right: 3rem;
     }
@@ -436,11 +437,16 @@ ul li::before {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+        /* display: inline-block;
+        justify-content: end; */
+        /* padding-left: 5rem; */
+        
     }
 
     #hero-image {
         height: auto;
         width: 80%;
+        margin-bottom: 1rem;
     }
 
     .hero-block {
@@ -451,6 +457,7 @@ ul li::before {
 
     .hero-text {
         text-align: center;
+        width: 354px;
     }
 
     /* MY WORK SECTION */
@@ -559,7 +566,7 @@ ul li::before {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     main {
-        padding-top: 4rem;
+        padding-top: 1.5rem;
         padding-left: 5.5rem;
         padding-right: 5.5rem;
         padding-bottom: 4rem;
@@ -589,6 +596,9 @@ ul li::before {
         text-align: left;
         text-wrap: wrap;
     }
+    .project {
+        max-width: 800px;
+    }
 
     .project-link {
         display: flex;
@@ -617,6 +627,19 @@ ul li::before {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    .hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin-left: 4rem; 
+        margin-top: 1rem;  
+    }
+
+    #hero-image {
+        margin-bottom: none;
+    }
+
+    
     .articles {
         display: flex;
         flex-direction: row;
@@ -628,4 +651,25 @@ ul li::before {
     .about-me{
         max-width: 905px;
     }
+}
+
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (min-width: 1800px) {
+    .hero {
+        gap: 3rem;
+        margin-left: 15rem;
+    }
+    
+    #hero-image {
+        max-width: 1100px;
+    }
+
+    .project{
+        max-width: 60rem;
+    }
+
+    /* fix this later */
+    /* .about-me {
+        max width: 60rem;
+    } */
 }
