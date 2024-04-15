@@ -164,6 +164,10 @@ nav {
     padding-bottom: 2rem;
 }
 
+.hero-block {
+    align-items: center;
+}
+
 #hero-image {
     height: auto;
     width: 100%;
@@ -175,6 +179,7 @@ nav {
     display: flex;
     flex-direction: column;
     text-wrap: wrap;
+    text-align: center;
 }
 
 .shecodes-text {
@@ -189,6 +194,7 @@ nav {
     flex-wrap: wrap;
     gap: 25px;
     margin: 20px 0px 20px 0px;
+    justify-content: center;
 }
 
 .icons {
@@ -199,8 +205,44 @@ nav {
 .icons:hover {
     border: 2px solid #ffa358;
     border-radius: 3px;
-    padding: 4px 4px;
+    padding: 2px 2px;
 }
+
+/* LANGUAGES AND FRAMEWORKS */
+.languages {
+    display: flex;
+    flex-direction: column;
+    /* background: linear-gradient(to right, var(--color4), var(--color2), var(--color5), var(--color3)) top; */
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.language-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.language-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.language-link {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.language-link h3 {
+    text-align: center;
+    text-decoration: none;
+}
+
 
 
 /* MY WORK SECTION */
@@ -211,6 +253,7 @@ nav {
     background-size: 100% 4px;
     background-repeat: no-repeat;
     padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 .articles {
@@ -220,11 +263,18 @@ nav {
     justify-content: space-between;
 }
 
-.project-image {
+.project-image img {
     width: 100%;
     height: auto;
     border-radius: 4px;
 }
+
+.project-image {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
 
 .project-link {
     display: flex;
@@ -233,7 +283,11 @@ nav {
 
 .project-link h3 {
     text-align: center;
-    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.project-link a {
+    text-decoration: none;
 }
 
 .project-link:hover h3 {
@@ -241,13 +295,33 @@ nav {
     border-radius: 3px;
     text-align: center;
     padding: 10px 15px;
+    margin-top: 6px;
 }
+
+/* GITHUB Repo */
+.github {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.github h2{
+    padding-bottom: 2rem;
+}
+
+.github img {
+    width: 100%;
+}
+
+
 
 #cv {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    margin: 2rem 0rem 1rem 0rem;
+    margin: 4rem 0rem 1rem 0rem;
 }
 
 .cv-button {
@@ -255,7 +329,6 @@ nav {
     display: inline-block;
     background-color: var(--color1);
     color: var(--color7);
-    font-size: 1.1rem;
     border: 2px solid var(--color7);
     border-radius: 3px;
     text-align: center;
@@ -268,14 +341,25 @@ nav {
     border-color: var(--color5);
 }
 
-
-
 /* ABOUT ME SECTION */
 .about-me {
     /* background: linear-gradient(to right, var(--color4), var(--color2), var(--color5), var(--color3)) top; */
     background-size: 100% 4px;
     background-repeat: no-repeat;
     padding-bottom: 4rem;
+    padding-top: 2rem;
+    gap:2rem;
+    text-align: center;
+}
+
+.about-me h2 {
+    padding-bottom: 1rem;
+}
+
+.about-me img {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 4px;
 }
 
 
@@ -285,12 +369,14 @@ nav {
     background-size: 100% 4px;
     background-repeat: no-repeat;
     padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: left;
 }
 
 .contact-field {
@@ -365,6 +451,7 @@ textarea::placeholder {
 /* NOT CHECKED YET PAGE 2 HTML/CSS Project 1 Styles*/
 .project-image {
     padding-top: 10px;
+    border-radius: 4px;
 }
 
 #project-title {
@@ -460,6 +547,44 @@ ul li::before {
         width: 354px;
     }
 
+    .icons-links {
+        justify-content: start;
+    }
+
+    /* LANGUAGES AND FRAMEWORKS */
+    .languages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .language-image {
+        width: 200px;
+    }
+
+    .language-articles {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap:1rem
+    }
+
+    .language-link {
+        flex-grow: 1;
+        flex-basis: 200;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .language-link h3 {
+        text-align: center;
+        width: 200px;
+        font-size: 1rem;
+    }
+
+
     /* MY WORK SECTION */
     .project {
         display: flex;
@@ -469,6 +594,7 @@ ul li::before {
 
     .project-image {
         width: 200px;
+        border-radius: 4px;
     }
 
     .articles {
@@ -493,6 +619,12 @@ ul li::before {
         font-size: 1rem;
     }
 
+    /* GITHUB REPO */
+    .github img {
+        width: 40%;
+    }
+
+    /* CV */
     #cv {
         margin: 3rem 0rem 1rem 0rem;
     }
@@ -507,12 +639,20 @@ ul li::before {
         flex-direction: column;
         align-items: center;
         text-wrap: wrap;
+        text-align: left;
+    }
+
+    .about-me img {
+        width: 70%;
+        margin-bottom: 2rem;
+        border-radius: 4px;
     }
 
     .contact {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: left;
     }
 
     .contact-form {
@@ -529,7 +669,7 @@ ul li::before {
     }
 
     /* NOT CHECK YET Project 1 Page Styles*/
-    .block {
+    /* .block {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -542,6 +682,7 @@ ul li::before {
         margin-top: 0px;
         margin-bottom: 5px;
         padding-top: 10px;
+        border-radius: 4px;
     }
 
     .html-image {
@@ -552,7 +693,7 @@ ul li::before {
         width: 470px;
         margin-top: 50px;
         margin-left: 40px;
-    }
+    } */
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -560,6 +701,12 @@ ul li::before {
     main {
         padding-left: 4.5rem;
         padding-right: 4.5rem;
+    }
+
+    .about-me img {
+        width: 60%;
+        margin-bottom: 2rem;
+        border-radius: 4px;
     }
 }
 
@@ -600,6 +747,14 @@ ul li::before {
         max-width: 800px;
     }
 
+    .languages {
+        max-width: 800px;
+    }
+
+    .language-image {
+        width: 160px;
+    }
+
     .project-link {
         display: flex;
         flex-direction: column;
@@ -623,6 +778,11 @@ ul li::before {
         align-items: center;
         gap:1rem
     }
+
+        /* GITHUB REPO */
+        .github img {
+            width: 50%;
+        }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -637,7 +797,7 @@ ul li::before {
     }
 
     #hero-image {
-        margin-bottom: none;
+        margin-bottom: 0;
     }
 
     
@@ -669,8 +829,13 @@ ul li::before {
         max-width: 60rem;
     }
 
+    .languages {
+        display: grid;
+        justify-items: center;
+    }
+
     /* fix this later */
-    /* .about-me {
-        max width: 60rem;
-    } */
+    .about-me {
+        max-width: 60rem;
+    }
 }
