@@ -72,15 +72,17 @@ main {
 
 /* Add Heading styles here  */
 h1 {
-    font-family: "Limelight", sans-serif;
+    font-family: "Figtree", sans-serif;
     font-size: 36px;
+    font-weight: 600;
     padding-bottom: .5rem;
     color: var(--color4);
 
 }
 h2 {
-    font-family: "Limelight", sans-serif;
+    font-family: "Figtree", sans-serif;
     font-size: 28px;
+    font-weight: 500;
     padding-top: 1rem;
     padding-bottom: 2rem;
     color: var(--color4);
